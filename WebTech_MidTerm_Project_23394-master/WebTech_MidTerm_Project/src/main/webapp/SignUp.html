@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>signup</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="icon" type="image/x-icon" href="/images/auca logo.jpg">
+
+
+<style>
+    body {
+        background-image: url("images/auca\ campus.jpg");
+        background-repeat: no-repeat; /* Prevent background image from repeating */
+        background-size: cover;
+    }
+
+    .user_card {
+        align-self: center;
+        height: auto;
+        width: 400px;
+        margin: 0 auto;
+        background: white;
+        padding: 20px;
+        border-radius: 5px;
+        margin-top: 80px;
+        justify-content: center;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .brand_logo_container {
+        text-align: center;
+    }
+
+    .brand_logo {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 2px solid white;
+    }
+
+    .form_container {
+        margin-top: 20px;
+    }
+
+    .btn-login {
+        width: 100%;
+        background: #025fab !important;
+        color: white !important;
+    }
+
+    .btn-login {
+        text-align: center;
+    }
+
+    .custom-control-label::before {
+        background-color: #60a3bc !important;
+    }
+
+    .btn-login{
+        width: 100%;
+        background: #025fab !important;
+        color: white !important;
+    }
+    
+</style>
+</head>
+
+<body>
+
+    <div class="container h-100">
+        <div class="d-flex justify-content-center h-100">
+            <div class="user_card">
+                <div class="brand_logo_container">
+                    <img src="images/auca logo.jpg" class="brand_logo" alt="Logo">
+                </div>
+                <div class="form_container">
+                    <form action="/LoginServlet" method="post">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="text" name="userName" class="form-control input_user" value="" placeholder="Email " required="">
+                        </div>
+
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="password" name="userName" class="form-control input_user" value="" placeholder="Password" required="">
+                        </div>
+
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            </div>
+                            <input type="password" name="password" class="form-control input_pass" value="" placeholder="Confirm_Password" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="user_type">Select User Role:</label>
+                            <select class="form-control" id="user_type" name="user_type">
+                                <option value="student">Student</option>
+                                <option value="admin">Admin</option>
+                                <option value="teacher">Teacher</option>
+                            </select>
+                        </div>
+                        </div>
+            <div class="btn-field">
+                <button type="submit" id="signUpBtn">Sign Up</button>
+                <button onclick="window.location.href='login.html'">Sign In</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

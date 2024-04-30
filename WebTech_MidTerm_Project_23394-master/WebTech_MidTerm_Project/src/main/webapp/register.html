@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Form</title>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<style>
+body {
+  background: #f1f1f1; 
+}
+
+.register-form {
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);  
+}
+
+.form-control {
+  background: #f7f7f7;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+}
+
+.btn {
+  background: #32de84;
+  border-radius: 20px;
+  padding: 5px 15px;
+  font-weight: bold;  
+}
+
+.btn:hover {
+  background: #2bc06a;  
+}
+
+</style>
+</head>
+<body>
+    <div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <h2 class="text-center mt-5 mb-3">Registration Form</h2>
+      
+      <form class="register-form" action="register" method="post">
+        <div class="form-group">
+          <label>Student ID</label>
+          <input type="text" class="form-control" name ="studentId" placeholder="Enter Student Id" >
+        </div>
+        <div class="form-group">
+          <label>Student Names</label>
+          <input type="text" class="form-control" name ="name" placeholder="Enter Student's names" >
+        </div>
+        <div class="form-group">
+          <label>Date of Birth</label>
+          <input type="date" class="form-control" name ="dob" >
+        </div>
+        <div class="form-group">
+          <label>Department</label>
+          <input type="text" class="form-control" name ="department" placeholder="Enter the department" >
+        </div>
+        
+        <br>
+  
+        <div class="row">
+          <div class="col-md-3">
+            <!-- <button type="submit" formaction="RegisterServlet" class="btn btn-primary btn-block">Register</button> -->
+            <button type="submit"  class="btn btn-primary btn-block">Register</button>
+          </div>
+          <div class="col-md-3">
+            <button type="submit" formaction="UpdateServlet" class="btn btn-primary btn-block">Update</button>
+          </div>
+          <div class="col-md-3">
+            <button type="submit" formaction="DeleteServlet" class="btn btn-danger btn-block">Delete</button>
+          </div>
+          <div class="col-md-3">
+            <button type="submit" formaction="displayStudents" class="btn btn-secondary btn-block">Display</button>
+          </div>
+        </div>
+        
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
